@@ -84,26 +84,7 @@ Acquisition parameters common to all three:
 
 ---
 
-## Repository Layout
 
-jackie-brain-twin/
-├── assets/
-│   ├── image - 2026-10-14T115850.011.jpg   # random street dog
-│   ├── image - 2026-10-14T115911.524.jpg   # best friend
-│   └── image - 2026-10-14T115921.681.jpg   # neighbor dog
-├── brain_regions.py          # anatomical atlas + baseline activations
-├── scan_data.py              # raw Session objects (J001–J006) + aggregation
-├── emotion_engine.py         # six-dimensional EmotionVector
-├── physiology.py             # heart-rate / respiration / SpO2 state
-├── stimulus_mapper.py        # text → session / social-condition resolver
-├── session_loader.py         # convenience queries over the six sessions
-├── visualizer.py             # maps stimulus labels to the three fMRI files
-├── neural_core.py            # main JackieCore class (state machine)
-├── config.py                 # paths, decay rates, social boost tables
-├── main.py                   # CLI entry point
-└── README.md
-
----
 ## Emotion & Region DynamicsDecay 
 
 every region exponentially relaxes toward its anatomical baseline (DECAY_RATE = 0.927).
