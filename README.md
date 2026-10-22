@@ -92,8 +92,9 @@ Injection – BOLD values from a matched session are scaled by intensity and add
 Social boosts – hard-coded additive offsets for the three social conditions (see config.REGION_BOOST).
 Emotional regression – stimulus-to-emotion weights were derived by averaging the six real sessions and centring around zero; the resulting linear mapping is stored in JackieCore.mappings.
 
-## Reproducibility NotesAll 
-floating-point values in the six core sessions are taken verbatim from the original recording logs.
+## Reproducibility Notes
+
+All floating-point values in the six core sessions are taken verbatim from the original recording logs.
 Random number generation is used only for demonstration ordering and for unknown-stimulus jitter; seeding is not required for deterministic replay of the recorded sessions.
 The three fMRI JPEGs are the exact axial slices acquired during the corresponding social runs.
 
